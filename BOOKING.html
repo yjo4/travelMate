@@ -64,6 +64,7 @@
     </nav>
 
     <form>
+        <legend>예약 정보</legend> 
         <fieldset>
             <legend>흡연 여부</legend>
             <ul>
@@ -108,14 +109,13 @@
         
         <br/>
         
-        <br/>
         <fieldset>
-            <h1>체크인 날짜</h1>
+            <legend>체크인 날짜</legend>
             <form name="check-in" method="post">
                 <input type='date' name='checkinDate' value='2021-02-05'/>
             </form>
 
-            <h1>체크아웃 날짜</h1>
+            <legend>체크아웃 날짜</legend>
             <form name="check-out" method="post">
                 <input type='date' name='checkoutDate' value='2021-02-05'/>
             </form>
@@ -123,8 +123,8 @@
             
         <br/>
         <fieldset>
-            
-            <h1>게스트</h1>
+
+            <legend>게스트</legend>
             <p>성인</p>
 
             <script src="./count.js"></script>
@@ -149,7 +149,10 @@
         </fieldset>    
 
     </form>
+
+    <br/>
     <input type="button" name="submit_button" value="submit">
 
+    <br/>
 </body>
 </html>
