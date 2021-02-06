@@ -76,37 +76,40 @@
         </fieldset>
 
         <br/>
-        <form>
-            <fieldset>
-                <legend>옵션</legend>    
-                <li>
-                    <input type="checkbox" id="pool"/>
-                    <label for="pool">수영장</label>
-                    <input type="checkbox" id="freeWiFi"/>
-                    <label for="freeWiFi">무료 와이파이</label>
-                    <input type="checkbox" id="breakfast"/>
-                    <label for="breakfast">조식 제공</label>
-                    <input type="checkbox" id="laundry"/>
-                    <label for="laundry">세탁실</label>
-                    <input type="checkbox" id="cancelFeeFree"/>
-                    <label for="cancelFeeFree">취소 수수료 없음</label>
-                </li>
-            </fieldset>    
+        
+        <fieldset>
+            <legend>옵션</legend>    
+            <li>
+                <input type="checkbox" id="pool"/>
+                <label for="pool">수영장</label>
+                <input type="checkbox" id="freeWiFi"/>
+                <label for="freeWiFi">무료 와이파이</label>
+                <input type="checkbox" id="breakfast"/>
+                <label for="breakfast">조식 제공</label>
+                <input type="checkbox" id="laundry"/>
+                <label for="laundry">세탁실</label>
+                <input type="checkbox" id="cancelFeeFree"/>
+                <label for="cancelFeeFree">취소 수수료 없음</label>
+            </li>
+        </fieldset>    
 
         <br/>
-        </form>
-            <fieldset>
-                <legend>여행 정보</legend> 
-                    <select name="Location">
-                        <option disabled="disabled" selected>여행지를 선택해주세요.</option>
-                        <option>한국</option>
-                        <option>미국</option>
-                        <option>일본</option>
-                        <option>중국</option>
-                    </select>    
-
-            <br/>
-            <br/>
+        
+        <fieldset>
+            <legend>여행 정보</legend> 
+                <select name="Location">
+                    <option disabled="disabled" selected>여행지를 선택해주세요.</option>
+                    <option>한국</option>
+                    <option>미국</option>
+                    <option>일본</option>
+                    <option>중국</option>
+                </select>    
+        </fieldset>
+        
+        <br/>
+        
+        <br/>
+        <fieldset>
             <h1>체크인 날짜</h1>
             <form name="check-in" method="post">
                 <input type='date' name='checkinDate' value='2021-02-05'/>
@@ -116,8 +119,11 @@
             <form name="check-out" method="post">
                 <input type='date' name='checkoutDate' value='2021-02-05'/>
             </form>
-
-            <br/>
+        </fieldset>
+            
+        <br/>
+        <fieldset>
+            
             <h1>게스트</h1>
             <p>성인</p>
 
@@ -140,7 +146,7 @@
             <input type='button' onclick='count_pet("minus")' value='-'/>
             <div id='result_pet'>0</div>
 
-            </fieldset>    
+        </fieldset>    
 
     </form>
     <input type="button" name="submit_button" value="submit">
