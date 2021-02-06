@@ -1,6 +1,22 @@
 ul{list-style: none;}
 a{text-decoration: none;}
 
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.con{
+    padding: 300px auto;
+}
+
+.whole{
+    width: 500px;
+    height: 900px;
+    margin: 0 auto;
+}
+
 .coupon{
     display: grid;
     grid-template-columns: auto auto auto;
@@ -13,11 +29,11 @@ a{text-decoration: none;}
 
 .coupon_info{
     position: absolute;
-    top: 90px;
-    left: 20px;
+    top: 160px;
+    left: 90px;
     z-index: 1;
-    color: white;
-    font-size: 18px;
-    width: 120px;
+    color: rgb(59, 53, 53);
+    font-size: 25px;
+    width: 350px;
     font-weight: bold;
 }
