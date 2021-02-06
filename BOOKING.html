@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TravelMATE</title>
+
+    <link rel="stylesheet" href="./company.css">
+
+    <style>
+        body{margin: 0;}
+
+        /* header */
+        header{
+            height: 200px;
+            background-color: aliceblue;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            color: black;
+        }
+
+        /* navigation bar */
+        nav{
+            display: flex;
+            justify-content: flex-end;
+            background-color: #2d3a4b;
+        }
+
+        nav a{
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        nav a:hover{
+            background-color: thistle;
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- notice -->
+    <div style="background-color: #2d3a4b; padding: 5px;">
+        <h4 style="text-align: center;">LOVE,PEACE AND TRAVEL</h4>
+    </div>
+
+    <!-- header -->
+    <header>
+        <h1>TravelMATE</h1>
+        <p>Travel far enough to meet yourself!</p>
+    </header>
+    
+    <!-- navigation var -->
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="BOOKING.html">BOOKING</a>
+        <a href="SERVICE.html">SERVICE</a>
+        <a href="OTHER.html">OTHER</a>
+    </nav>
+
+    <form>
+        <fieldset>
+            <legend>흡연 여부</legend>
+            <ul>
+                <li>
+
+                    <label><input type="radio" name="smoking"/>흡연</label>
+                    <label><input type="radio" name="smoking"/>비흡연</label>
+                    <label><input type="radio" name="smoking"/>상관없다</label>
+                </li>    
+            </fieldset>
+
+        <br/>
+        <form>
+            <fieldset>
+                <legend>옵션</legend>    
+                <li>
+                    <input type="checkbox" id="pool"/>
+                    <label for="pool">수영장</label>
+                    <input type="checkbox" id="freeWiFi"/>
+                    <label for="freeWiFi">무료 와이파이</label>
+                    <input type="checkbox" id="breakfast"/>
+                    <label for="breakfast">조식 제공</label>
+                    <input type="checkbox" id="laundry"/>
+                    <label for="laundry">세탁실</label>
+                    <input type="checkbox" id="cancelFeeFree"/>
+                    <label for="cancelFeeFree">취소 수수료 없음</label>
+                </li>
+            </fieldset>    
+
+        <br/>
+        <form>
+            <fieldset>
+                <legend>여행 정보</legend> 
+                    <select name="Location">
+                        <option disabled="disabled" selected>여행지를 선택해주세요.</option>
+                        <option>한국</option>
+                        <option>미국</option>
+                        <option>일본</option>
+                        <option>중국</option>
+                    </select>    
+
+            <br/>
+            <br/>
+            <h1>체크인 날짜</h1>
+            <form name="check-in" method="post">
+                <input type='date' name='checkinDate' value='2021-02-05'/>
+            </form>
+
+            <h1>체크아웃 날짜</h1>
+            <form name="check-out" method="post">
+                <input type='date' name='checkoutDate' value='2021-02-05'/>
+            </form>
+
+            <br/>
+            <h1>게스트</h1>
+            <p>성인</p>
+
+            <script src="./count.js"></script>
+            <input type='button' onclick='count_adult("plus")' value='+'/>
+            <input type='button' onclick='count_adult("minus")' value='-'/>
+            <div id='result_adult'>0</div>
+
+            <p>어린이</p>
+
+            <script src="./count.js"></script>
+            <input type='button' onclick='count_child("plus")' value='+'/>
+            <input type='button' onclick='count_child("minus")' value='-'/>
+            <div id='result_child'>0</div>
+
+            <p>반려동물</p>
+
+            <script src="./count.js"></script>
+            <input type='button' onclick='count_pet("plus")' value='+'/>
+            <input type='button' onclick='count_pet("minus")' value='-'/>
+            <div id='result_pet'>0</div>
+
+            </fieldset>    
+
+        </form>
+        <input type="button" name="submit_button" value="submit">
+
+</body>
+</html>
