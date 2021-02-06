@@ -80,51 +80,60 @@
         
         <fieldset>
             <legend>옵션</legend>    
-            <li>
-                <input type="checkbox" id="pool"/>
-                <label for="pool">수영장</label>
-                <input type="checkbox" id="freeWiFi"/>
-                <label for="freeWiFi">무료 와이파이</label>
-                <input type="checkbox" id="breakfast"/>
-                <label for="breakfast">조식 제공</label>
-                <input type="checkbox" id="laundry"/>
-                <label for="laundry">세탁실</label>
-                <input type="checkbox" id="cancelFeeFree"/>
-                <label for="cancelFeeFree">취소 수수료 없음</label>
-            </li>
+            <ul>
+                <li>
+                    <input type="checkbox" id="pool"/>
+                    <label for="pool">수영장</label>
+                    <input type="checkbox" id="freeWiFi"/>
+                    <label for="freeWiFi">무료 와이파이</label>
+                    <input type="checkbox" id="breakfast"/>
+                    <label for="breakfast">조식 제공</label>
+                    <input type="checkbox" id="laundry"/>
+                    <label for="laundry">세탁실</label>
+                    <input type="checkbox" id="cancelFeeFree"/>
+                    <label for="cancelFeeFree">취소 수수료 없음</label>
+                </li>
+            </ul>
         </fieldset>    
 
         <br/>
         
         <fieldset>
             <legend>여행 정보</legend> 
+            <ul>
                 <select name="Location">
                     <option disabled="disabled" selected>여행지를 선택해주세요.</option>
                     <option>한국</option>
                     <option>미국</option>
                     <option>일본</option>
                     <option>중국</option>
-                </select>    
+                </select>
+            </ul>  
         </fieldset>
         
         <br/>
         
         <fieldset>
             <legend>체크인 날짜</legend>
+            <ul>
             <form name="check-in" method="post">
                 <input type='date' name='checkinDate' value='2021-02-05'/>
             </form>
+            </ul>
 
             <legend>체크아웃 날짜</legend>
+            <ul>
             <form name="check-out" method="post">
                 <input type='date' name='checkoutDate' value='2021-02-05'/>
             </form>
+            </ul>
         </fieldset>
             
         <br/>
         <fieldset>
 
             <legend>게스트</legend>
+            <ul>
             <p>성인</p>
 
             <script src="./count.js"></script>
@@ -145,7 +154,7 @@
             <input type='button' onclick='count_pet("plus")' value='+'/>
             <input type='button' onclick='count_pet("minus")' value='-'/>
             <div id='result_pet'>0</div>
-
+            </ul>
         </fieldset>    
 
     </form>
